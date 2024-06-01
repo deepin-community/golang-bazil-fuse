@@ -1,5 +1,55 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-bazil-fuse (0.0~git20160811.0.371fbbd-4) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 13.
+  * Set debhelper-compat version in Build-Depends.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 26 Nov 2022 14:13:10 +0000
+
+golang-bazil-fuse (0.0~git20160811.0.371fbbd-3) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Remove Built-Using from arch:all -dev package
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dr. Tobias Quathamer ]
+  * Use debhelper v11
+  * Update team name
+  * Update to Standards-Version 4.2.1
+    - Use HTTPS URL for d/copyright
+    - Use Priority: optional
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Fri, 30 Nov 2018 19:48:50 +0100
+
+golang-bazil-fuse (0.0~git20160811.0.371fbbd-2) unstable; urgency=medium
+
+  * Team upload.
+  * Switch Build-Depends to golang-any
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Tue, 29 Nov 2016 18:01:31 +0100
+
+golang-bazil-fuse (0.0~git20160811.0.371fbbd-1) unstable; urgency=medium
+
+  [ Dr. Tobias Quathamer ]
+  * Team upload.
+  * Imported Upstream version 0.0~git20160811.0.371fbbd
+  * Use debhelper v10
+  * Update to Standards-Version 3.9.8, no changes needed
+  * Update team name
+  * Update Build-Depends to new package name of golang-golang-x-net-dev
+  * Really use a secure transport for the Vcs-Browser URL
+  * Add XS-Go-Import-Path
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sat, 12 Nov 2016 08:28:13 +0100
+
+golang-bazil-fuse (0.0~git20150620-1) unstable; urgency=medium
+
+  * Initial release (Closes: #788912)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Mon, 22 Jun 2015 20:17:10 +0200
