@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+export DH_GOPKG := bazil.org/fuse
+export DH_GOLANG_EXCLUDES := bazil.org/fuse/examples
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_test:
+	# The tests require a working FUSE setup, which is not necessarily
+	# present on the buildds and/or in pbuilder.
